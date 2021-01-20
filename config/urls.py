@@ -23,3 +23,4 @@ urlpatterns = [
 ]
 
 handler404 = 'page.views.page_not_found'
+handler404 = 'page.views.server_error'
