@@ -21,3 +21,5 @@ urlpatterns = [
     path('bbs/', include('bbs.urls')),
     path('', include('page.urls')),
 ]
+
+handler404 = 'page.views.page_not_found'
