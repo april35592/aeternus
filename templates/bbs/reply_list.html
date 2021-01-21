@@ -16,13 +16,13 @@
         </div>
     </div>
 </form>
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 <h1>Thanks For</h1>
 {% if reply_list %}
     <div class="reply_list">
         {% for reply in reply_list %}
-            <h3 class="reply_list">{{ reply.name }}</h3>
-            <p class="reply_list">{{ reply.content }}</p>
+            <h3 class="reply_list" onclick="toggleOpenClose('reply_list_{{ reply.id }}')">{{ reply.name }}</h3>
+            <p class="reply_list" id="reply_list_{{ reply.id }}">{{ reply.content }}</p>
         {% endfor %}
     </div>
 {% endif %}
@@ -39,4 +39,6 @@
     {% endif %}
     </strong>
 </p>
+
+<script src="static/toggleOpenClose.js"></script>
 {% endblock %}
