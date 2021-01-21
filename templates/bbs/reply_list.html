@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
 <form action="{% url 'bbs:guestcreate' %}" method="post">
@@ -40,5 +41,5 @@
     </strong>
 </p>
 
-<script src="static/toggleOpenClose.js"></script>
+<script src="{% static 'toggleOpenClose.js' %}"></script>
 {% endblock %}
