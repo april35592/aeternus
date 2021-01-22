@@ -145,27 +145,31 @@ hr {
 
     #input_guest{
         width: 100%;
+        height: 110px;
     }
     #input_content{
         float: none;
         width: 100%;
     }
+    #input_guest_content{
+        display: block;
+        resize: none;
+        width: 98%;
+    }
+
     #input_name{
         float: none;
         width: 100%;
-    }
-    #input_guest_content{
-        resize: none;
-        width: 98%;
+        height: 30px;
     }
     #input_guest_name{
         width: 65%;
         height: 20px;
-        padding: 0px; margin: 0px;
+        padding: 0px; margin: 10px 0px 0px 0px;
     }
     #input_guest_button{
         width: 33%;
         height: 20px;
-        padding: 0px; margin: 0px;
+        padding: 0px; margin: 10px 0px 0px 0px;
     }
 }
