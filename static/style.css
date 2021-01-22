@@ -90,19 +90,22 @@ h2:first-letter{color: #eb737d;}
 
 #input_guest{
     width: 400px;
+    height: 80px;
 }
 #input_content{
     float: left;
     width: 300px;
-}
-#input_name{
-    float: left;
-    width: 100px;
+    height: 80px;
 }
 #input_guest_content{
     resize: none;
     width: 290px;
     height: 80px;
+}
+
+#input_name{
+    float: left;
+    width: 100px;
 }
 #input_guest_name{
     width: 98px;
@@ -113,7 +116,7 @@ h2:first-letter{color: #eb737d;}
 #input_guest_button{
     width: 100px;
     height: 60px;
-    border: 1px solid #666666;
+    border: 1px solid #666666;  
     padding: 0px; margin:0px;
     background-color: #EEEEEE;
 }
