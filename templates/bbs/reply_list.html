@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
 
 <form action="{% url 'bbs:guestcreate' %}" method="post">
@@ -22,7 +21,8 @@
 {% if reply_list %}
     <div class="reply_list">
         {% for reply in reply_list %}
-            <h3 class="reply_list" onclick="toggleOpenClose('reply_list_{{ reply.id }}')">{{ reply.name }}</h3>
+            <h3 class="reply_list" onclick="toggleOpenClose('reply_list_{{ reply.id }}', 'toggle_{{reply.id}}')">{{ reply.name }}
+                <span class="reply_list" id="toggle_{{reply.id}}">▽</span></h3>
             <p class="reply_list" id="reply_list_{{ reply.id }}">{{ reply.content }}</p>
         {% endfor %}
     </div>
@@ -41,5 +41,4 @@
     </strong>
 </p>
 
-<script src="{% static 'toggleOpenClose.js' %}"></script>
 {% endblock %}
