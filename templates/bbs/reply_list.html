@@ -21,9 +21,8 @@
 {% if reply_list %}
     <div class="reply_list">
         {% for reply in reply_list %}
-            <h3 class="reply_list" onclick="toggleOpenClose('reply_list_{{ reply.id }}', 'toggle_{{reply.id}}')">{{ reply.name }}
-                <span class="reply_list" id="toggle_{{reply.id}}">▽</span></h3>
-            <p class="reply_list" id="reply_list_{{ reply.id }}">{{ reply.content }}</p>
+            <h3>{{ reply.name }}<span>▽</span></h3>
+            <p>{{ reply.content }}</p>
         {% endfor %}
     </div>
 {% endif %}
