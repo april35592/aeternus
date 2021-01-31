@@ -6,6 +6,6 @@ class GuestForm(forms.ModelForm):
         model = Guest
         fields = ['name', 'content']
         labels = {
-            'name': '닉네임을 입력해주세요',
-            'content': '내용을 입력해주세요',
+            'name': '닉네임',
+            'content': '내용',
         }
