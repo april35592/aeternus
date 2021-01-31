@@ -4,7 +4,7 @@
 <form action="{% url 'bbs:guestcreate' %}" method="post">
     {% csrf_token %}
     {% if form.errors %}{% for field in form %}{% if field.errors %}
-        <p><strong>{{ field.label }}</strong></p>
+        <p><strong>{{ field.label }}을 입력해주세요.</strong></p>
     {% endif %}{% endfor %}{% endif %}
     <div id="input_guest">
         <div id="input_content">
