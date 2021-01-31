@@ -13,9 +13,7 @@ def index(request):
     if request.method == 'POST':
         form = GuestForm(request.POST)
         if form.is_valid():
-            guest = form.save(commit=False)
-            guest.date = timezone.now()
-            guest.save()
+            guest = form.save()
             return redirect('bbs:bbs')
     else:
         form = GuestForm()    
