@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+body {
+    margin: 10px;
+}
+
+
 body, td, th{
     font-size: 85%;
     color: #222222;
@@ -17,35 +22,14 @@ a:hover{text-decoration: none;color:#666666;}
 
 img{border: none;}
 
+form {
+    margin: 20px 0px 5px 0px;
+}
+
 hr {
-    size: 1px;
+    margin: 20px 0px 5px 0px;
     border: 0px;
     border-top: 1px dashed #666666;
-  }
-
-
-/* base 정렬 */
-
-#allpage{
-    float: middle;
-    width: 820px;
-    margin-left: auto; margin-right:auto;
-}
-#menu{
-    width: 400px;
-    float: left;
-    margin: 5px;
-    text-align: center;
-}
-#sub_menu{
-    display: none;
-}
-#content{
-    width: 400px; height: 100%;
-    float: left;
-    word-break: break-all;
-    text-align: left;
-    margin: 5px;
 }
 
 h1{
@@ -54,10 +38,13 @@ h1{
     font-size: 200%;
     color: #666666;
     font-weight: normal;
-    margin: 10px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     padding: 0px;
 }
-h1:first-letter{color: #eb737d;}
+
+h1:first-letter{
+    color: #eb737d;
+}
 
 #menu h1{
     font-size: 400%;
@@ -76,7 +63,41 @@ h2{
     margin: 20px 0px 0px 0px;
     padding: 7px 12px;
 }
-h2:first-letter{color: #eb737d;}
+
+h2:first-letter{
+    color: #eb737d;
+}
+
+.right {
+    float:right;
+}
+
+
+/* base 정렬 */
+
+#allpage{
+    width: 820px;
+    margin: 0px auto;
+}
+
+#menu{
+    width: 400px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+}
+
+#sub_menu{
+    display: none;
+}
+
+#content{
+    width: 400px; height: 100%;
+    float: left;
+    word-break: break-all;
+    text-align: left;
+    margin: 5px;
+}
 
 
 /* bbs */
@@ -84,6 +105,7 @@ h2:first-letter{color: #eb737d;}
 .reply_list p{
     display: none;
 }
+
 .reply_list h3{
     font-size: 100%;
     color: #222222;
@@ -91,20 +113,26 @@ h2:first-letter{color: #eb737d;}
     background-color: #eeeeee;
     margin: -1px 0px 0px 0px;
     padding: 7px 12px;
+    cursor: pointer;
 }
-.reply_list span{
-    float: right;
+
+.reply_list p{
+    border : 1px solid #666666;
+    margin : 0px;
+    padding : 4px;
 }
 
 #input_guest{
     width: 400px;
     height: 80px;
 }
+
 #input_content{
     float: left;
     width: 300px;
     height: 80px;
 }
+
 #input_guest_content{
     resize: none;
     width: 290px;
@@ -115,12 +143,14 @@ h2:first-letter{color: #eb737d;}
     float: left;
     width: 100px;
 }
+
 #input_guest_name{
     width: 98px;
     height: 20px;
     border: 1px solid #666666;
     padding: 0px; margin:0px 0px 4px 0px;
 }
+
 #input_guest_button{
     width: 100px;
     height: 60px;
@@ -140,18 +170,31 @@ h2:first-letter{color: #eb737d;}
 
 /* 미디어쿼리 */
 
-@media (max-width: 830px) {
+@media (max-width: 840px) { 
     #allpage{
+        width: 400px;
+    }
+
+    #menu {
+        float: none;
+    }
+
+    #content {
+        float: none;
+    }
+}
+
+@media (max-width: 440px) {
+    #allpage {
         width: 98%;
+    }
+    #content {
+        width: 100%;
     }
     #menu{
         display: none;
     }
     #sub_menu{
-        display: block;
-        width: 100%;
-    }
-    #content{
         display: block;
         width: 100%;
     }

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<form action="{% url 'bbs:guestcreate' %}" method="post">
+<form method="post">
     {% csrf_token %}
     {% if form.errors %}{% for field in form %}{% if field.errors %}
         <p><strong>{{ field.label }}을 입력해주세요.</strong></p>

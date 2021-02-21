@@ -1,3 +1,5 @@
+//bbs reply 접기-펼치기
+
 var reply_h3 = document.querySelectorAll(".reply_list h3");
 var reply_diraction = document.querySelectorAll(".reply_list span");
 var reply_p = document.querySelectorAll(".reply_list p");

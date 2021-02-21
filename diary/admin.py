@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Guest, Reply
+from .models import Image, Reply
 # Register your models here.
-
-admin.site.register(Guest)
+admin.site.register(Image)
 admin.site.register(Reply)
