@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 body {
-    margin: 10px;
-}
-
-
-body, td, th{
+    margin: 0;
     font-size: 85%;
     color: #222222;
     font-family: 'Nanum Gothic';
@@ -21,10 +17,6 @@ a:visited{text-decoration: none;color:#222222;}
 a:hover{text-decoration: none;color:#666666;}
 
 img{border: none;}
-
-form {
-    margin: 20px 0px 5px 0px;
-}
 
 hr {
     margin: 20px 0px 5px 0px;
@@ -81,6 +73,7 @@ h2:first-letter{
 }
 
 #menu{
+    box-sizing: border-box;
     width: 400px;
     float: left;
     margin: 5px;
@@ -88,10 +81,12 @@ h2:first-letter{
 }
 
 #sub_menu{
+    box-sizing: border-box;
     display: none;
 }
 
 #content{
+    box-sizing: border-box;
     width: 400px; height: 100%;
     float: left;
     word-break: break-all;
@@ -104,6 +99,9 @@ h2:first-letter{
 
 .reply_list p{
     display: none;
+    border : 1px solid #666666;
+    margin : 0px;
+    padding : 10px;
 }
 
 .reply_list h3{
@@ -116,47 +114,59 @@ h2:first-letter{
     cursor: pointer;
 }
 
-.reply_list p{
-    border : 1px solid #666666;
-    margin : 0px;
-    padding : 4px;
-}
+
+/* bbs input */
 
 #input_guest{
+    box-sizing: border-box;
     width: 400px;
     height: 80px;
+    margin: 4px 0px 0px 0px;
 }
 
 #input_content{
+    box-sizing: border-box;
     float: left;
     width: 300px;
     height: 80px;
 }
 
-#input_guest_content{
-    resize: none;
-    width: 290px;
-    height: 80px;
-}
-
 #input_name{
+    box-sizing: border-box;
     float: left;
     width: 100px;
 }
 
+#input_guest_content{
+    all: unset;
+    border: 1px solid #666666;
+    padding: 4px;
+    margin: 0px 4px 0px 0px;
+    resize: none;
+    width: 286px;
+    height: 72px;
+}
+
 #input_guest_name{
+    all: unset;
+    border: 1px;
     width: 98px;
-    height: 20px;
+    height: 18px;
     border: 1px solid #666666;
     padding: 0px; margin:0px 0px 4px 0px;
 }
 
 #input_guest_button{
-    width: 100px;
-    height: 60px;
-    border: 1px solid #666666;  
-    padding: 0px; margin:0px;
+    all: unset;
+    width: 98px;
+    height: 56px;
+    border: 1px solid #666666;
+    padding: 0px;
+    margin:0px;
+    font-weight: bold;
+    text-align: center;
     background-color: #EEEEEE;
+    cursor: pointer;
 }
 
 
@@ -184,16 +194,20 @@ h2:first-letter{
     }
 }
 
+
 @media (max-width: 440px) {
     #allpage {
         width: 98%;
     }
+
     #content {
-        width: 100%;
+        width: 98%;
     }
+
     #menu{
         display: none;
     }
+
     #sub_menu{
         display: block;
         width: 100%;
@@ -203,32 +217,44 @@ h2:first-letter{
     /* bbs */
 
     #input_guest{
-        width: 100%;
-        height: 110px;
+        height: 120px;
+        width: 100%
     }
+
     #input_content{
         float: none;
         width: 100%;
-    }
-    #input_guest_content{
-        display: block;
-        resize: none;
-        width: 98%;
+        height: 72px;
     }
 
     #input_name{
         float: none;
         width: 100%;
-        height: 30px;
+        height: 28px;
+        margin: 4px 0px 0px 0px;
     }
+
+    #input_guest_content{
+        box-sizing: border-box;
+        resize: none;
+        width: 100%;
+        margin: 0;
+    }
+
     #input_guest_name{
-        width: 65%;
-        height: 20px;
-        padding: 0px; margin: 10px 0px 0px 0px;
+        box-sizing: border-box;
+        width: 70%;
+        height: 22px;
+        padding: 0;
+        margin: 0;
     }
+
     #input_guest_button{
-        width: 33%;
-        height: 20px;
-        padding: 0px; margin: 10px 0px 0px 0px;
+        box-sizing: border-box;
+        width: 29%;
+        height: 22px;
+        padding: 0;
+        margin: 0;
+        float: right;
     }
 }

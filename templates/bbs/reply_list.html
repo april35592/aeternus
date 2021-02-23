@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<h2>Guest Book</h2>
 <form method="post">
     {% csrf_token %}
     {% if form.errors %}{% for field in form %}{% if field.errors %}
@@ -16,7 +16,6 @@
         </div>
     </div>
 </form>
-<br>
 <h1>Thanks For</h1>
 {% if reply_list %}
     <div class="reply_list">
@@ -27,8 +26,7 @@
     </div>
 {% endif %}
 
-<p class="page_control">
-    <strong>
+    <div class="page_control">
     <!-- 이전페이지 -->
     {% if reply_list.has_previous %}
         <a class="page-link" href="?page={{ reply_list.previous_page_number }}">&lt;이전페이지 /</a>
@@ -37,7 +35,6 @@
     {% if reply_list.has_next %}
         <a class="page-link" href="?page={{ reply_list.next_page_number }}">/ 다음페이지&gt;</a>
     {% endif %}
-    </strong>
-</p>
+    </div>
 
 {% endblock %}
