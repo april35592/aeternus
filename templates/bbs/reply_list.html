@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <h2>Guest Book</h2>
-<form method="post">
+<form method="post" name="reply">
     {% csrf_token %}
     {% if form.errors %}{% for field in form %}{% if field.errors %}
         <p><strong>{{ field.label }}을 입력해주세요.</strong></p>

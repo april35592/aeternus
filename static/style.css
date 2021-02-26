@@ -16,7 +16,9 @@ a:link{text-decoration: none;color:#222222;}
 a:visited{text-decoration: none;color:#222222;}
 a:hover{text-decoration: none;color:#666666;}
 
-img{border: none;}
+img{
+    border: none;
+}
 
 hr {
     margin: 20px 0px 5px 0px;
@@ -94,6 +96,9 @@ h2:first-letter{
     margin: 5px;
 }
 
+#diary img{
+    width: 100%;
+}
 
 /* bbs */
 

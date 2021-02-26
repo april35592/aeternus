@@ -9,12 +9,16 @@ def bbs(request):
     reply_list = Reply.objects.order_by('-id')
     paginator = Paginator(reply_list, 5)
     page_obj = paginator.get_page(page)
+    form = GuestForm()
     if request.method == 'POST':
         form = GuestForm(request.POST)
         if form.is_valid():
             guest = form.save()
             return redirect('bbs:bbs')
-    else:
-        form = GuestForm()
-    return render(request, 'bbs/reply_list.html', {'reply_list': page_obj, 'form': form})
-    
+    return render(
+        request,
+        'bbs/reply_list.html',
+        {
+            'reply_list': page_obj,
+            'form': form
+        })

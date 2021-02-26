@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Diary</h2>
+<form method="post" action="./upload_image/" enctype="multipart/form-data" name="image">
+    {% csrf_token %}
+    <label>
+        <input id="input_image_file" type="file" accept="image/*, .gif, .jpg, .png" name="image_file">
+    </label>
+    <input id="input_image_password" type="password" name="image_password" placeholder="비밀번호">
+    <input id="input_image_button" type="submit" value="업로드">
+</form>
+
+<div id="diary">
+{% for image in image_list %}
+<img src="{{ image.image.url }}">
+{% for reply in image.reply_set.all %}
+<div class="reply reply_{{ reply.id }}">
+<p>{{ reply.name }}</p>
+<p>{{ reply.content }}</p>
+<p>{{ reply.date }}</p>
+</div>
+{% endfor %}
+{% endfor %}
+</div>
+
+<div class="page_control">
+    <!-- 이전페이지 -->
+    {% if reply_list.has_previous %}
+    <a class="page-link" href="?page={{ image_list.previous_page_number }}">&lt;이전페이지 /</a>
+    {% endif %}
+    <!-- 다음페이지 -->
+    {% if reply_list.has_next %}
+    <a class="page-link" href="?page={{ image_list.next_page_number }}">/ 다음페이지&gt;</a>
+    {% endif %}
+</div>
+
+{% endblock %}
