@@ -7,12 +7,12 @@
         <p><strong>{{ field.label }}을 입력해주세요.</strong></p>
     {% endif %}{% endfor %}{% endif %}
     <div id="input_guest">
-        <div id="input_content">
-            <textarea id="input_guest_content" name="content" placeholder="남기실 메세지가 있다면 적어주세요!">{{ form.content.value|default_if_none:'' }}</textarea>
+        <div id="input_guest_content">
+            <textarea name="content" placeholder="남기실 메세지가 있다면 적어주세요!">{{ form.content.value|default_if_none:'' }}</textarea>
         </div>
-        <div id="input_name">
-            <input id="input_guest_name" type="text" name="name" placeholder="닉네임" value="{{ form.name.value|default_if_none:'' }}">
-            <input id="input_guest_button" type="submit" value="전송">
+        <div id="input_guest_name">
+            <input type="text" name="name" placeholder="닉네임" value="{{ form.name.value|default_if_none:'' }}">
+            <input type="submit" value="전송">
         </div>
     </div>
 </form>
@@ -21,7 +21,7 @@
     <div class="reply_list">
         {% for reply in reply_list %}
             <h3>{{ reply.name }}<span>▽</span></h3>
-            <p>{{ reply.content }}</p>
+            <p class="hidden">{{ reply.content }}</p>
         {% endfor %}
     </div>
 {% endif %}

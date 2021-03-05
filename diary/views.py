@@ -34,8 +34,9 @@ def uploadImage(request):
 def deleteImage(request, image_id):
     if request.method == 'POST':
         image = get_object_or_404(Image, pk=image_id)
-        if check_password(request.POST['password'], image.password):
-            image.delete()
+        if request.POST['password'] != '':
+            if check_password(request.POST['password'], image.password):
+                image.delete()
     return redirect('diary:main')
 
 
@@ -54,6 +55,7 @@ def createReply(request, image_id):
 def deleteReply(request, reply_id):
     if request.method == 'POST':
         reply = get_object_or_404(Reply, pk=reply_id)
-        if check_password(request.POST['password'], reply.password):
-            reply.delete()
+        if request.POST['password'] != '':
+            if check_password(request.POST['password'], reply.password):
+                reply.delete()
     return redirect('diary:main')

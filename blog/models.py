@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=50, unique=True)
+    thumnail = models.ImageField(upload_to='blog')
     slug = models.SlugField(max_length=200, unique=True, allow_unicode=True)
 
 class Post(models.Model):
