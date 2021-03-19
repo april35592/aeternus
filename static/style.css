@@ -377,14 +377,14 @@ h2:first-letter {
 
 /* 미디어쿼리 */
 
-@media (max-width: 840px) { 
+@media (max-width: 1020px) { 
     #allpage {
-        width: 400px;
+        width: 600px;
     }
 
     #menu {
         float: none;
-        margin: 5px 0 0 0;
+        margin: 5px auto 0 auto;
     }
 
     #content {
@@ -394,7 +394,7 @@ h2:first-letter {
 }
 
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
     #allpage {
         width: 98%;
     }
@@ -425,7 +425,7 @@ h2:first-letter {
     #input_guest_content {
         float: none;
         width: 100%;
-        height: 70px;
+        height: 90px;
     }
 
     #input_guest_name {

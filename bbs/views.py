@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from .models import Guest, Reply
 from .forms import GuestForm
-# Create your views here.
 
 def bbs(request):
     page = request.GET.get('page', '1')

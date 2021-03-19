@@ -10,7 +10,6 @@ class ImageForm(forms.ModelForm):
             'password' : forms.PasswordInput(attrs={'id' : 'input_image_password'}),
         }
 
-
 class ReplyForm(forms.ModelForm):
     class Meta:
         model = Reply
