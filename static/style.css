@@ -84,7 +84,7 @@ h2:first-letter {
 /* base 정렬 */
 
 #allpage {
-    width: 820px;
+    width: 1020px;
     margin: 0 auto;
 }
 
@@ -103,7 +103,7 @@ h2:first-letter {
 
 #content {
     box-sizing: border-box;
-    width: 400px;
+    width: 600px;
     height: 100%;
     float: left;
     word-break: break-all;
@@ -314,23 +314,23 @@ h2:first-letter {
 
 #input_guest {
     box-sizing: border-box;
-    width: 400px;
-    height: 80px;
-    margin: 5px 0 0 0;
+    width: 600px;
+    height: 100px;
+    margin: 5px auto 0 auto;
 }
 
 #input_guest_content {
     box-sizing: border-box;
     float: left;
-    width: 300px;
-    height: 80px;
+    width: 450px;
+    height: 100px;
 }
 
 #input_guest_name {
     box-sizing: border-box;
     float: left;
-    width: 100px;
-    height: 80px;
+    width: 150px;
+    height: 100px;
 }
 
 #input_guest_content textarea {
@@ -339,14 +339,14 @@ h2:first-letter {
     padding: 4px;
     margin: 0 4px 0 0;
     resize: none;
-    width: 286px;
-    height: 70px;
+    width: 436px;
+    height: 90px;
 }
 
 #input_guest_name input[type = text] {
     all: unset;
     border: 1px;
-    width: 98px;
+    width: 148px;
     height: 18px;
     border: 1px solid #666666;
     padding: 0;
@@ -355,8 +355,8 @@ h2:first-letter {
 
 #input_guest_name input[type = submit] {
     all: unset;
-    width: 98px;
-    height: 54px;
+    width: 148px;
+    height: 74px;
     border: 1px solid #666666;
     padding: 0;
     margin: 0;
