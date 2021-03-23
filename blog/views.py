@@ -3,17 +3,22 @@ from django.views.generic import ListView, DetailView
 from .models import Category, Post, Image
 
 
-class Category(ListView):
+class CategoryList(ListView):
     model = Category
 
 
-class PostList(ListView):
-    model = Post
+def postList(request, slug):
+    category = Category.objects.get(slug_url=slug)
+    post_list = Post.objects.filter(category=category)
 
-    def get_context_data(self, **kwargs):
-        context = super(PostList, self).get_context_data()
-        context['category'] = Category.objects.all()
-        return context
+    return render(
+        request,
+        'blog/Post_list.html',
+        {
+            'post_list': post_list,
+            'category': category,
+        }
+    )
 
 
 class PostDetail(DetailView):

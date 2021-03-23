@@ -1,461 +1,449 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 body {
-    margin: 0;
-    font-size: 85%;
-    color: #222222;
-    font-family: 'Nanum Gothic';
+  margin: 0;
+  font-size: 85%;
+  color: #222222;
+  font-family: "Nanum Gothic";
 }
 
 p {
-    margin: 4px;
-    line-height: 120%;
+  margin: 4px;
+  line-height: 120%;
 }
 
 a:link {
-    text-decoration: none;
-    color: #222222;
+  text-decoration: none;
+  color: #222222;
 }
 
 a:visited {
-    text-decoration: none;
-    color: #222222;
+  text-decoration: none;
+  color: #222222;
 }
 a:hover {
-    text-decoration: none;
-    color: #666666;
+  text-decoration: none;
+  color: #666666;
 }
 
 img {
-    border: none;
+  border: none;
+  max-width: 100%;
 }
 
 hr {
-    margin: 20px 0 5px 0;
-    border: 0;
-    border-top: 1px dashed #666666;
+  margin: 20px 0 5px 0;
+  border: 0;
+  border-top: 1px dashed #666666;
 }
 
 h1 {
-    font-family: serif;
-    text-align: right;
-    font-size: 200%;
-    color: #222222;
-    font-weight: normal;
-    margin: 20px 0 0 0;
-    padding: 0;
+  font-family: serif;
+  text-align: right;
+  font-size: 200%;
+  color: #222222;
+  font-weight: normal;
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 h1:first-letter {
-    color: #eb737d;
+  color: #eb737d;
 }
 
 #menu h1 {
-    font-size: 400%;
+  font-size: 400%;
 }
 #sub_menu h1 {
-    font-size: 400%;
-    text-align: left;
+  font-size: 400%;
+  text-align: left;
 }
 
 h2 {
-    font-size: 100%;
-    color: #222222;
-    letter-spacing: 1px;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    margin: 20px 0 0 0;
-    padding: 7px 12px;
+  font-size: 100%;
+  color: #222222;
+  letter-spacing: 1px;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  margin: 20px 0 0 0;
+  padding: 7px 12px;
 }
 
 h2:first-letter {
-    color: #eb737d;
+  color: #eb737d;
 }
 
 .right {
-    float:right;
+  float: right;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
-
 
 /* base 정렬 */
 
 #allpage {
-    width: 1020px;
-    margin: 0 auto;
+  width: 1020px;
+  margin: 0 auto;
 }
 
 #menu {
-    box-sizing: border-box;
-    width: 400px;
-    float: left;
-    margin: 5px;
-    text-align: center;
+  box-sizing: border-box;
+  width: 400px;
+  float: left;
+  margin: 5px;
+  text-align: center;
 }
 
 #sub_menu {
-    box-sizing: border-box;
-    display: none;
+  box-sizing: border-box;
+  display: none;
 }
 
 #content {
-    box-sizing: border-box;
-    width: 600px;
-    height: 100%;
-    float: left;
-    word-break: break-all;
-    text-align: left;
-    margin: 5px;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100%;
+  float: left;
+  word-break: break-all;
+  text-align: left;
+  margin: 5px;
 }
-
 
 /* diary */
 
-#diary img {
-    max-width: 100%;
-}
-
 .page {
-    padding: 5px;
-    border: 1px dashed #666666;
-    margin: 5px 0;
+  padding: 5px;
+  border: 1px dashed #666666;
+  margin: 5px 0;
 }
 
 .page_id {
-    margin: 4px 0;
-    height: 20px;
+  margin: 4px 0;
+  height: 20px;
 }
 
 .image {
-    margin: 4px 0;
-    clear: both;
-    background-color: #eeeeee;
-    text-align: center;
+  margin: 4px 0;
+  clear: both;
+  background-color: #eeeeee;
+  text-align: center;
 }
 
 .reply {
-    clear: both;
-    margin: 4px 0;
-    padding: 4px;
-    border: 1px solid #666666;
+  clear: both;
+  margin: 4px 0;
+  padding: 4px;
+  border: 1px solid #666666;
 }
-
 
 /* diary input */
 
 #input_image {
-    margin: 0;
-    border: 1px dashed #666666;
-    margin: 5px 0 0 0;
-    padding: 5px;
-    text-align: center;
+  margin: 0;
+  border: 1px dashed #666666;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  text-align: center;
 }
 
 #input_image label {
-    height: 20px;
-    cursor: pointer;
+  height: 20px;
+  cursor: pointer;
 }
 
 #input_image label img {
-    box-sizing: border-box;
-    height: 10px;
-    margin: 0;
+  box-sizing: border-box;
+  height: 10px;
+  margin: 0;
 }
 
-#input_image input[type = submit] {
-    all: unset;
-    width: 58px;
-    height: 18px;
-    border: 1px solid #666666;
-    background-color: #EEEEEE;
-    padding: 0;
+#input_image input[type="submit"] {
+  all: unset;
+  width: 58px;
+  height: 18px;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  padding: 0;
 }
 
-#input_image [type = password] {
-    all: unset;
-    border: 1px solid #666666;
-    background-color: #ffffff;
-    width: 98px;
-    height: 18px;
-    text-align: left;
+#input_image [type="password"] {
+  all: unset;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  width: 98px;
+  height: 18px;
+  text-align: left;
 }
 
 .image_delete {
-    margin: 0 0 4px 0;
+  margin: 0 0 4px 0;
 }
 
 .image_delete span {
-    display: inline-block;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    width: 58px;
-    height: 18px;
-    text-align: center;
-    cursor: pointer;
+  display: inline-block;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  width: 58px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.image_delete [type = password] {
-    all: unset;
-    display: inline-block;
-    border: 1px solid #666666;
-    background-color: #ffffff;
-    width: 98px;
-    height: 18px;
+.image_delete [type="password"] {
+  all: unset;
+  display: inline-block;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  width: 98px;
+  height: 18px;
 }
 
-.image_delete [type = submit] {
-    all: unset;
-    display: inline-block;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    width: 58px;
-    height: 18px;
-    text-align: center;
-    cursor: pointer;
+.image_delete [type="submit"] {
+  all: unset;
+  display: inline-block;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  width: 58px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .reply_delete span {
-    display: inline-block;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    width: 58px;
-    height: 18px;
-    text-align: center;
-    cursor: pointer;
+  display: inline-block;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  width: 58px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.reply_delete [type = password] {
-    all: unset;
-    border: 1px solid #666666;
-    background-color: #ffffff;
-    width: 98px;
-    height: 18px;
+.reply_delete [type="password"] {
+  all: unset;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  width: 98px;
+  height: 18px;
 }
 
-.reply_delete [type = submit] {
-    all: unset;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    width: 58px;
-    height: 18px;
-    text-align: center;
-    cursor: pointer;
+.reply_delete [type="submit"] {
+  all: unset;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  width: 58px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .reply_button {
-    padding: 4px;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    text-align: center;
-    height: 16px;
-    cursor: pointer;
+  padding: 4px;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  text-align: center;
+  height: 16px;
+  cursor: pointer;
 }
 
 .input_reply textarea {
-    all: unset;
-    box-sizing: border-box;
-    border: 1px solid #666666;
-    padding: 4px;
-    resize: none;
-    width: 100%;
-    height: 70px;
+  all: unset;
+  box-sizing: border-box;
+  border: 1px solid #666666;
+  padding: 4px;
+  resize: none;
+  width: 100%;
+  height: 70px;
 }
 
-.input_reply input[type = text]{
-    all: unset;
-    border: 1px solid #666666;
-    background-color: #ffffff;
-    width: 118px;
-    height: 18px;
+.input_reply input[type="text"] {
+  all: unset;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  width: 118px;
+  height: 18px;
 }
 
-.input_reply input[type = password]{
-    all: unset;
-    border: 1px solid #666666;
-    background-color: #ffffff;
-    width: 98px;
-    height: 18px;
+.input_reply input[type="password"] {
+  all: unset;
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  width: 98px;
+  height: 18px;
 }
 
-.input_reply input[type = submit]{
-    all: unset;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    width: 58px;
-    height: 18px;
-    text-align: center;
-    cursor: pointer;
+.input_reply input[type="submit"] {
+  all: unset;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  width: 58px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
 }
-
 
 /* bbs */
 
 .reply_list p {
-    border: 1px solid #666666;
-    margin: 0;
-    padding: 10px;
+  border: 1px solid #666666;
+  margin: 0;
+  padding: 10px;
 }
 
 .reply_list h3 {
-    font-size: 100%;
-    color: #222222;
-    border: 1px solid #666666;
-    background-color: #eeeeee;
-    margin: -1px 0 0 0;
-    padding: 7px 12px;
-    cursor: pointer;
+  font-size: 100%;
+  color: #222222;
+  border: 1px solid #666666;
+  background-color: #eeeeee;
+  margin: -1px 0 0 0;
+  padding: 7px 12px;
+  cursor: pointer;
 }
-
 
 /* bbs input */
 
 #input_guest {
-    box-sizing: border-box;
-    width: 600px;
-    height: 100px;
-    margin: 5px auto 0 auto;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100px;
+  margin: 5px auto 0 auto;
 }
 
 #input_guest_content {
-    box-sizing: border-box;
-    float: left;
-    width: 450px;
-    height: 100px;
+  box-sizing: border-box;
+  float: left;
+  width: 450px;
+  height: 100px;
 }
 
 #input_guest_name {
-    box-sizing: border-box;
-    float: left;
-    width: 150px;
-    height: 100px;
+  box-sizing: border-box;
+  float: left;
+  width: 150px;
+  height: 100px;
 }
 
 #input_guest_content textarea {
-    all: unset;
-    border: 1px solid #666666;
-    padding: 4px;
-    margin: 0 4px 0 0;
-    resize: none;
-    width: 436px;
-    height: 90px;
+  all: unset;
+  border: 1px solid #666666;
+  padding: 4px;
+  margin: 0 4px 0 0;
+  resize: none;
+  width: 436px;
+  height: 90px;
 }
 
-#input_guest_name input[type = text] {
-    all: unset;
-    border: 1px;
-    width: 148px;
-    height: 18px;
-    border: 1px solid #666666;
-    padding: 0;
-    margin:0 0 4px 0;
+#input_guest_name input[type="text"] {
+  all: unset;
+  border: 1px;
+  width: 148px;
+  height: 18px;
+  border: 1px solid #666666;
+  padding: 0;
+  margin: 0 0 4px 0;
 }
 
-#input_guest_name input[type = submit] {
-    all: unset;
-    width: 148px;
-    height: 74px;
-    border: 1px solid #666666;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-    background-color: #EEEEEE;
-    cursor: pointer;
+#input_guest_name input[type="submit"] {
+  all: unset;
+  width: 148px;
+  height: 74px;
+  border: 1px solid #666666;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  background-color: #eeeeee;
+  cursor: pointer;
 }
-
 
 /* 기타 */
 
 .page_control {
-    text-align: center;
-    margin: 5px 0;
+  text-align: center;
+  margin: 5px 0;
 }
-
 
 /* 미디어쿼리 */
 
-@media (max-width: 1020px) { 
-    #allpage {
-        width: 600px;
-    }
+@media (max-width: 1020px) {
+  #allpage {
+    width: 600px;
+  }
 
-    #menu {
-        float: none;
-        margin: 5px auto 0 auto;
-    }
+  #menu {
+    float: none;
+    margin: 5px auto 0 auto;
+  }
 
-    #content {
-        float: none;
-        margin: 0;
-    }
+  #content {
+    float: none;
+    margin: 0;
+  }
 }
 
-
 @media (max-width: 600px) {
-    #allpage {
-        width: 98%;
-    }
+  #allpage {
+    width: 98%;
+  }
 
-    #content {
-        box-sizing: border-box;
-        width: 100%;
-    }
+  #content {
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-    #menu {
-        display: none;
-    }
+  #menu {
+    display: none;
+  }
 
-    #sub_menu {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-    }
+  #sub_menu {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
 
+  /* bbs */
 
-    /* bbs */
+  #input_guest {
+    height: 120px;
+    width: 100%;
+  }
 
-    #input_guest {
-        height: 120px;
-        width: 100%
-    }
+  #input_guest_content {
+    float: none;
+    width: 100%;
+    height: 90px;
+  }
 
-    #input_guest_content {
-        float: none;
-        width: 100%;
-        height: 90px;
-    }
+  #input_guest_name {
+    float: none;
+    width: 100%;
+    height: 28px;
+    margin: 4px 0 0 0;
+  }
 
-    #input_guest_name {
-        float: none;
-        width: 100%;
-        height: 28px;
-        margin: 4px 0 0 0;
-    }
+  #input_guest_content textarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    margin: 0;
+  }
 
-    #input_guest_content textarea {
-        box-sizing: border-box;
-        resize: none;
-        width: 100%;
-        margin: 0;
-    }
+  #input_guest_name input[type="text"] {
+    box-sizing: border-box;
+    width: 70%;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+  }
 
-    #input_guest_name input[type = text] {
-        box-sizing: border-box;
-        width: 70%;
-        height: 20px;
-        padding: 0;
-        margin: 0;
-    }
-
-    #input_guest_name input[type = submit] {
-        box-sizing: border-box;
-        width: 29%;
-        height: 20px;
-        padding: 0;
-        margin: 0;
-        float: right;
-    }
+  #input_guest_name input[type="submit"] {
+    box-sizing: border-box;
+    width: 29%;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
 }
