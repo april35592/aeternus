@@ -21,7 +21,7 @@ for (let i = 0; i < reply_delete.length; i++) {
     });
 };
 
-for (let i = 0; i < reply_delete.length; i++) {
+for (let i = 0; i < reply_create.length; i++) {
     reply_create[i].addEventListener("click", function(event) {
         reply_create[i].style.display = "none";
         reply_create_form[i].classList.remove("hidden");

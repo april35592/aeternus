@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Blog</h2>
+
+<div id="category_list">
+    {% for category in object_list %}
+        <div class="{{ category.slug }}">
+            <a href="/blog/{{ category.slug }}/">
+                <img src="{{ category.thumnail.url }}">
+                <p>{{ category.name }}</p>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
