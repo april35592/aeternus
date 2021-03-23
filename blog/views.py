@@ -5,6 +5,7 @@ from .models import Category, Post, Image
 
 class CategoryList(ListView):
     model = Category
+    template_name = 'blog/Category_list.html'
 
 
 def postList(request, slug):
@@ -23,3 +24,4 @@ def postList(request, slug):
 
 class PostDetail(DetailView):
     model = Post
+    template_name = 'blog/Post_detail.html'
