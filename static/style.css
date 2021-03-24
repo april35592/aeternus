@@ -81,7 +81,7 @@ h2:first-letter {
   display: none;
 }
 
-/* base 정렬 */
+/* base */
 
 #allpage {
   width: 1020px;
@@ -288,6 +288,7 @@ h2:first-letter {
 #category_list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .category_card {
@@ -387,14 +388,14 @@ h2:first-letter {
   cursor: pointer;
 }
 
-/* 기타 */
+/* etc */
 
 .page_control {
   text-align: center;
   margin: 5px 0;
 }
 
-/* 미디어쿼리 */
+/* media query */
 
 @media (max-width: 1020px) {
   #allpage {
@@ -430,6 +431,13 @@ h2:first-letter {
     box-sizing: border-box;
     display: block;
     width: 100%;
+  }
+
+
+  /* blog */
+
+  #category_list {
+  justify-content: space-around;
   }
 
   /* bbs */
