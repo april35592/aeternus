@@ -284,6 +284,35 @@ h2:first-letter {
   cursor: pointer;
 }
 
+/* blog */
+#category_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category_card {
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  width: 195px;
+  height: 398px;
+  border: solid 1px #222222;
+  margin-top: 4px;
+}
+
+.category_thumbnail {
+  box-sizing: border-box;
+  width: 195px;
+  height: 370px;
+}
+
+.category_thumbnail img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 195px;
+  height: 370px;
+}
+
 /* bbs */
 
 .reply_list p {

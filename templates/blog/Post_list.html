@@ -3,16 +3,16 @@
 <h2>{{ category }}</h2>
 
 <div id="post_list">
-    {% for post in post_list %}
+  {% for post in post_list %}
 
-    <div>
-        <a href="{% url 'blog:postDetail' post.category.slug_url post.id %}">
-            <div class="postThumbnail"><img src="{{ post.thumbnail.url }}"></div>
-            {{ post.title }}
-        </a>
-    </div>
+  <div>
+    <a href="{% url 'blog:postDetail' post.category.slug_url post.id %}">
+      <div class="postThumbnail"><img src="{{ post.thumbnail.url }}"></div>
+      {{ post.title }}
+    </a>
+  </div>
 
-    {% endfor %}
+ {% endfor %}
 </div>
 
 {% endblock %}
