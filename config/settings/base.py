@@ -88,7 +88,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+'''
 # 로깅설정
 LOGGING = {
     'version': 1,
@@ -106,7 +106,7 @@ LOGGING = {
             '()': 'django.utils.log.ServerFormatter',
             'format': '[{server_time}] {message}',
             'style': '{',
-        }
+        },
         'standard': {
             'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
         },
@@ -126,7 +126,7 @@ LOGGING = {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
         'file': {
             'level': 'INFO',
             'filters': ['require_debug_false'],
@@ -149,3 +149,4 @@ LOGGING = {
         },
     }
 }
+'''
