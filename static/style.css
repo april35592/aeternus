@@ -73,6 +73,10 @@ h2:first-letter {
   color: #eb737d;
 }
 
+.more_letter {
+  color: #eb737d;
+}
+
 .right {
   float: right;
 }
@@ -314,6 +318,10 @@ h2:first-letter {
   height: 100%;
 }
 
+.date {
+  text-align: right;
+}
+
 /* bbs */
 
 .reply_list p {
@@ -432,7 +440,6 @@ h2:first-letter {
     display: block;
     width: 100%;
   }
-
 
   /* blog */
 

@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 {% load markdown_filter %}
+
+{% block title %}{{ object.title }} - {% endblock %}
+
 {% block content %}
-<h2>{{ object.category }} - {{ object.title }}</h2>
-<p>{{ object.create_date }} 생성</p>
-{% if object.update_date == object.create_date %}<p>{{ object.update_date }} 수정</p>{% endif %}
+<h2><span class='title_category'>[{{ object.category }}]</span> {{ object.title }}</h2>
+<p class='date'>{{ object.create_date }} 생성</p>
+{% if object.update_date == object.create_date %}<p class='date'>{{ object.update_date }} 수정</p>{% endif %}
 
 <div id="post">
   {{ object.content }}
