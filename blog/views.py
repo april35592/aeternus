@@ -10,7 +10,7 @@ class CategoryList(ListView):
 
 def postList(request, slug):
     category = Category.objects.get(slug_url=slug)
-    post_list = Post.objects.filter(category=category)
+    post_list = Post.objects.filter(category=category).order_by('-create_date')
 
     return render(
         request,

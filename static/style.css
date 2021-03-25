@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-size: 85%;
-  color: #222222;
+  color: #222;
   font-family: "Nanum Gothic";
 }
 
@@ -14,16 +14,16 @@ p {
 
 a:link {
   text-decoration: none;
-  color: #222222;
+  color: #222;
 }
 
 a:visited {
   text-decoration: none;
-  color: #222222;
+  color: #222;
 }
 a:hover {
   text-decoration: none;
-  color: #666666;
+  color: #666;
 }
 
 img {
@@ -34,7 +34,7 @@ img {
 hr {
   margin: 20px 0 20px 0;
   border: 0;
-  border-top: 1px dashed #666666;
+  border-top: 1px dashed #666;
 }
 
 .endhr {
@@ -45,7 +45,7 @@ h1 {
   font-family: serif;
   text-align: right;
   font-size: 200%;
-  color: #222222;
+  color: #222;
   font-weight: normal;
   margin: 20px 0 0 0;
   padding: 0;
@@ -66,8 +66,8 @@ h1:first-letter {
 h2 {
   font-size: 100%;
   letter-spacing: 1px;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   margin: 20px 0 0 0;
   padding: 7px 12px;
 }
@@ -92,6 +92,11 @@ h4 {
 
 ul {
   margin: 0;
+}
+
+pre {
+  background-color: #eeeeee;
+  overflow-x: scroll;
 }
 
 .right {
@@ -136,7 +141,7 @@ ul {
 
 .page {
   padding: 5px;
-  border: 1px dashed #666666;
+  border: 1px dashed #666;
   margin: 5px 0;
 }
 
@@ -148,7 +153,7 @@ ul {
 .image {
   margin: 4px 0;
   clear: both;
-  background-color: #eeeeee;
+  background-color: #eee;
   text-align: center;
 }
 
@@ -156,14 +161,14 @@ ul {
   clear: both;
   margin: 4px 0;
   padding: 4px;
-  border: 1px solid #666666;
+  border: 1px solid #666;
 }
 
 /* diary input */
 
 #input_image {
   margin: 0;
-  border: 1px dashed #666666;
+  border: 1px dashed #666;
   margin: 5px 0 0 0;
   padding: 5px;
   text-align: center;
@@ -184,15 +189,15 @@ ul {
   all: unset;
   width: 58px;
   height: 18px;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   padding: 0;
 }
 
 #input_image [type="password"] {
   all: unset;
-  border: 1px solid #666666;
-  background-color: #ffffff;
+  border: 1px solid #666;
+  background-color: #fff;
   width: 98px;
   height: 18px;
   text-align: left;
@@ -204,8 +209,8 @@ ul {
 
 .image_delete span {
   display: inline-block;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   width: 58px;
   height: 18px;
   text-align: center;
@@ -215,8 +220,8 @@ ul {
 .image_delete [type="password"] {
   all: unset;
   display: inline-block;
-  border: 1px solid #666666;
-  background-color: #ffffff;
+  border: 1px solid #666;
+  background-color: #fff;
   width: 98px;
   height: 18px;
 }
@@ -224,8 +229,8 @@ ul {
 .image_delete [type="submit"] {
   all: unset;
   display: inline-block;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   width: 58px;
   height: 18px;
   text-align: center;
@@ -234,8 +239,8 @@ ul {
 
 .reply_delete span {
   display: inline-block;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   width: 58px;
   height: 18px;
   text-align: center;
@@ -244,16 +249,16 @@ ul {
 
 .reply_delete [type="password"] {
   all: unset;
-  border: 1px solid #666666;
-  background-color: #ffffff;
+  border: 1px solid #666;
+  background-color: #fff;
   width: 98px;
   height: 18px;
 }
 
 .reply_delete [type="submit"] {
   all: unset;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   width: 58px;
   height: 18px;
   text-align: center;
@@ -262,8 +267,8 @@ ul {
 
 .reply_button {
   padding: 4px;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   text-align: center;
   height: 16px;
   cursor: pointer;
@@ -272,7 +277,7 @@ ul {
 .input_reply textarea {
   all: unset;
   box-sizing: border-box;
-  border: 1px solid #666666;
+  border: 1px solid #666;
   padding: 4px;
   resize: none;
   width: 100%;
@@ -281,24 +286,24 @@ ul {
 
 .input_reply input[type="text"] {
   all: unset;
-  border: 1px solid #666666;
-  background-color: #ffffff;
+  border: 1px solid #666;
+  background-color: #fff;
   width: 118px;
   height: 18px;
 }
 
 .input_reply input[type="password"] {
   all: unset;
-  border: 1px solid #666666;
-  background-color: #ffffff;
+  border: 1px solid #666;
+  background-color: #fff;
   width: 98px;
   height: 18px;
 }
 
 .input_reply input[type="submit"] {
   all: unset;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   width: 58px;
   height: 18px;
   text-align: center;
@@ -318,7 +323,7 @@ ul {
   font-weight: bold;
   width: 195px;
   height: 398px;
-  border: solid 1px #222222;
+  border: solid 1px #222;
   margin-top: 4px;
 }
 
@@ -342,7 +347,7 @@ ul {
 /* bbs */
 
 .reply_list p {
-  border: 1px solid #666666;
+  border: 1px solid #666;
   margin: 0;
   padding: 10px;
 }
@@ -350,8 +355,8 @@ ul {
 .reply_list h3 {
   font-size: 100%;
   color: #222222;
-  border: 1px solid #666666;
-  background-color: #eeeeee;
+  border: 1px solid #666;
+  background-color: #eee;
   margin: -1px 0 0 0;
   padding: 7px 12px;
   cursor: pointer;
@@ -382,7 +387,7 @@ ul {
 
 #input_guest_content textarea {
   all: unset;
-  border: 1px solid #666666;
+  border: 1px solid #666;
   padding: 4px;
   margin: 0 4px 0 0;
   resize: none;
@@ -395,7 +400,7 @@ ul {
   border: 1px;
   width: 148px;
   height: 18px;
-  border: 1px solid #666666;
+  border: 1px solid #666;
   padding: 0;
   margin: 0 0 4px 0;
 }
@@ -404,12 +409,12 @@ ul {
   all: unset;
   width: 148px;
   height: 74px;
-  border: 1px solid #666666;
+  border: 1px solid #666;
   padding: 0;
   margin: 0;
   font-weight: bold;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #eee;
   cursor: pointer;
 }
 
