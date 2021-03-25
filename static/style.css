@@ -61,7 +61,6 @@ h1:first-letter {
 
 h2 {
   font-size: 100%;
-  color: #222222;
   letter-spacing: 1px;
   border: 1px solid #666666;
   background-color: #eeeeee;
@@ -75,6 +74,20 @@ h2:first-letter {
 
 .more_letter {
   color: #eb737d !important;
+}
+
+h3 {
+  font-size: 120%;
+  margin: 20px 0 4px 0;
+}
+
+h4 {
+  font-size: 100%;
+  margin: 20px 0 4px 0;
+}
+
+ul {
+  margin: 0;
 }
 
 .right {
