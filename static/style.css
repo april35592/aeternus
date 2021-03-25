@@ -74,7 +74,7 @@ h2:first-letter {
 }
 
 .more_letter {
-  font-style: #eb737d;
+  color: #eb737d !important;
 }
 
 .right {
