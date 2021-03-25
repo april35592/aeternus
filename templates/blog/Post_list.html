@@ -2,17 +2,17 @@
 {% block content %}
 <h2>{{ category }}</h2>
 
-<div id="post_list">
+<ul id="post_list">
   {% for post in post_list %}
-
-  <div>
+  <li class='post_title'>
     <a href="{% url 'blog:postDetail' post.category.slug_url post.id %}">
-      <div class="postThumbnail"><img src="{{ post.thumbnail.url }}"></div>
+      {% if post.thumbnail %}
+        <div class="postThumbnail"><img src="{{ post.thumbnail.url }}"></div>
+      {% endif %}
       {{ post.title }}
     </a>
-  </div>
-
+  </li>
  {% endfor %}
-</div>
+</ul>
 
 {% endblock %}
