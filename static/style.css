@@ -94,11 +94,6 @@ ul {
   margin: 0;
 }
 
-pre {
-  background-color: #eeeeee;
-  overflow-x: scroll;
-}
-
 .right {
   float: right;
 }
