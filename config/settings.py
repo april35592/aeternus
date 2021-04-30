@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '&$0ko+@^2_ms*5ld5-0no2yzhb^^%399z*qq0n6#*xuykchcq3'
 
 DEBUG = False
-ALLOWED_HOSTS = ['april0ys.pe.kr', '3.36.141.64']
+ALLOWED_HOSTS = ['3.133.41.43', 'april0ys.pe.kr']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -73,7 +73,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'ko-kr'
+LANGUAGE_CODE = 'ko-KR'
 
 TIME_ZONE = 'Asia/Seoul'
 
@@ -84,7 +84,8 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = []
+STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
