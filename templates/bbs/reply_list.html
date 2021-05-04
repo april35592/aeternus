@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <h2>Guest Book</h2>
-<img src="{% static 'thanks_guest.png' %}" width="600" height="600" alt="thanks guest"/>
+<img src="{% static 'thanks_guest.png' %}" alt="thanks guest"/>
 <form method="post" name="reply">
   {% csrf_token %}
   {% if form.errors %}{% for field in form %}{% if field.errors %}
